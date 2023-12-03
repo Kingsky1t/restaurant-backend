@@ -3,10 +3,10 @@ const app = require("express")();
 const cors = require('cors')
 app.use(cors())
 const port = process.env.PORT || 3001;
-const restaurantData = require("./restaurantData.json");
+// const restaurantData = ;
 
 app.get("/", (req, res) => {
-    res.json(restaurantData);
+    res.json(require("./restaurantData.json"));
 });
 
 app.listen(port, () => {
