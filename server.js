@@ -1,6 +1,5 @@
 const app = require("express")();
 
-app.use(cors())
 const port = process.env.PORT || 3001;
 const restaurantData = require("./restaurantData.json");
 
